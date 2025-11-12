@@ -7,14 +7,13 @@ import { getFirestore, setDoc, doc }
 
 /* --- MASUKKAN firebaseConfig DARI FIREBASE CONSOLE DI SINI --- */
 const firebaseConfig = {
-  apiKey: "AIzaSyB4LAWMU6t_wLz3DGdmsbLsOF5Et7sdWSw",
-  authDomain: "loginapp-48e80.firebaseapp.com",
-  projectId: "loginapp-48e80",
-  storageBucket: "loginapp-48e80.firebasestorage.app",
-  messagingSenderId: "679707975645",
-  appId: "1:679707975645:web:ec9b1160e100f22e296034"
+  apiKey: "AIzaSyAKSgGraRShJn0mdowj04JGQ6tRenW3w-g",
+  authDomain: "fir-authproject-44744.firebaseapp.com",
+  projectId: "fir-authproject-44744",
+  storageBucket: "fir-authproject-44744.firebasestorage.app",
+  messagingSenderId: "294774255393",
+  appId: "1:294774255393:web:efb2575291036e0670d860"
 };
-
 /* ----------------------------------------------------------- */
 
 const app = initializeApp(firebaseConfig);
@@ -87,4 +86,5 @@ onAuthStateChanged(auth, (user) => {
     authForms.classList.remove("hidden");
     userPage.classList.add("hidden");
   }
+
 });
