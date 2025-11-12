@@ -7,13 +7,14 @@ import { getFirestore, setDoc, doc }
 
 /* --- MASUKKAN firebaseConfig DARI FIREBASE CONSOLE DI SINI --- */
 const firebaseConfig = {
-  apiKey: "AIzaSyAKSgGraRShJn0mdowj04JGQ6tRenW3w-g",
+ apiKey: "AIzaSyAKSgGraRShJn0mdowj04JGQ6tRenW3w-g",
   authDomain: "fir-authproject-44744.firebaseapp.com",
   projectId: "fir-authproject-44744",
   storageBucket: "fir-authproject-44744.firebasestorage.app",
   messagingSenderId: "294774255393",
   appId: "1:294774255393:web:efb2575291036e0670d860"
 };
+
 /* ----------------------------------------------------------- */
 
 const app = initializeApp(firebaseConfig);
@@ -88,3 +89,4 @@ onAuthStateChanged(auth, (user) => {
   }
 
 });
+
