@@ -3,47 +3,40 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Secure Login System</title>
+  <title>Login Aman Firebase</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Import Firebase SDK modular (dipanggil dari script.js via module imports) -->
   <script type="module" src="./script.js" defer></script>
 </head>
-
 <body>
-  <div class="wrapper">
-    <div class="glass-card">
-      <h2 class="title">🔐 Secure Login System</h2>
+  <div class="container">
+    <h2>Login Aman dengan Firebase</h2>
 
-      <!-- AUTH FORM -->
-      <div id="authForms">
-        <div class="section">
-          <h3>Daftar Akun</h3>
-          <input id="regEmail" type="email" placeholder="Email" />
-          <input id="regPass" type="password" placeholder="Password (min 6)" />
-          <button id="btnRegister" class="neon-btn">Daftar</button>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="section">
-          <h3>Login</h3>
-          <input id="loginEmail" type="email" placeholder="Email" />
-          <input id="loginPass" type="password" placeholder="Password" />
-          <button id="btnLogin" class="neon-btn">Login</button>
-        </div>
+    <div id="authForms">
+      <div id="register">
+        <h3>Daftar Akun</h3>
+        <input id="regEmail" type="email" placeholder="Email" />
+        <input id="regPass" type="password" placeholder="Password (min 6)" />
+        <button id="btnRegister">Daftar</button>
       </div>
 
-      <!-- USER PAGE -->
-      <div id="userPage" class="hidden">
-        <h3>Selamat Datang,</h3>
-        <div class="user-box">
-          <p><strong>Email:</strong> <span id="userEmail"></span></p>
-          <p id="userId"></p>
-        </div>
-        <button id="btnLogout" class="neon-btn red">Logout</button>
-      </div>
+      <hr />
 
-      <p id="messages"></p>
+      <div id="login">
+        <h3>Login</h3>
+        <input id="loginEmail" type="email" placeholder="Email" />
+        <input id="loginPass" type="password" placeholder="Password" />
+        <button id="btnLogin">Login</button>
+      </div>
     </div>
+
+    <div id="userPage" class="hidden">
+      <h3>Halo, <span id="userEmail"></span>!</h3>
+      <p id="userId"></p>
+      <button id="btnLogout">Logout</button>
+    </div>
+
+    <div id="messages"></div>
   </div>
 </body>
 </html>
